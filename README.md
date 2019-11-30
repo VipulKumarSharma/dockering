@@ -1,12 +1,14 @@
 # Dockering
 
-## Commands
+
+## Docker Commands
 
 ### Build the image
     
     docker build .
 
-### Download (if not available) Image, create container & execute the container. You can create [n] no of copies of images :
+### Download (if not available) Image, create container & execute the container. 
+You can create [n] no of copies of images :
 
     docker run <IMAGE_ID>
     docker run mongo
@@ -22,14 +24,15 @@
 
 ### To enter a image & execute some commands we have few methods :
 
-1.Start the container & run command interactively
+* Start the container & run command interactively
     
-    docker start 980b788af773
-    docker exec -it 980b788af773 bash
+        docker start 980b788af773
+        docker exec -it 980b788af773 bash
     
-2.Directly run docker image with command [ It is not an advised approach, which can override the default behaviour of container initialization & might cause problems ]
+* Directly run docker image with command 
+[ It is not an advised approach, which can override the default behaviour of container initialization & might cause problems ]
 
-    docker run -it mongo bash
+        docker run -it mongo bash
     
 ### Name & tag the Image
     
@@ -43,11 +46,9 @@
     
     docker run tysonvks/mymongo:latest
 
+
 <hr>
 
-### Get image from Docker Hub :
-
-    docker pull busybox
 
 ### Run Docker image with command :
 
@@ -70,11 +71,18 @@
 
     docker kill 980b788af773
 
-## Push Image to Docker Hub
+
+
+
+## Docker Hub commands
 
 ### Login to docker CLI
     
     docker login -u tysonvks -p $DOCKERHUB_TOKEN
+
+### Get image from Docker Hub :
+
+    docker pull busybox
     
 ### Add tag to your image
     
@@ -84,7 +92,10 @@
 
     docker push tysonvks/cloud-foundry-app
     
-## Github Package Registry
+    
+    
+    
+## Github Package Registry Commands
 
 ### Add Dockerfile in project's root directory
     
@@ -120,4 +131,6 @@
 
     docker run cloud-foundry-app:v1 -p 8080:8080
     
-URL for locally running app in container : [http://172.17.0.2:8080](http://172.17.0.2:8080)
+### URL for locally running app in container : 
+    
+[http://172.17.0.2:8080](http://172.17.0.2:8080)
