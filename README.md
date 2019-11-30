@@ -1,7 +1,7 @@
 # Dockering
 
 
-## Docker Commands
+## <i>Docker Commands</i>
 
 ### Build the image
     
@@ -47,9 +47,6 @@ You can create [n] no of copies of images :
     docker run tysonvks/mymongo:latest
 
 
-<hr>
-
-
 ### Run Docker image with command :
 
     docker run busybox ls -latr
@@ -74,7 +71,7 @@ You can create [n] no of copies of images :
 
 
 
-## Docker Hub commands
+## <i>Docker Hub commands</i>
 
 ### Login to docker CLI
     
@@ -95,7 +92,7 @@ You can create [n] no of copies of images :
     
     
     
-## Github Package Registry Commands
+## <i>Github Package Registry Commands</i>
 
 ### Add Dockerfile in project's root directory
     
